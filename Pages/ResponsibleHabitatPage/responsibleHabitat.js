@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Interpolate and display user's name from localStorage
   
-    document.querySelector('.welcome-text h2').textContent = `Nom Prénom`;
+    document.querySelector('.welcome-text h2').textContent = `Emma BRIGITTE`;
     document.querySelector('.welcome-text h6').textContent = `Statu: Responsable d'habitat`;
    
     //Disconnect
