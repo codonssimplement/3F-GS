@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
  
 
-    document.querySelector('.welcome-text h2').textContent = `Nom Prénom`;
+    document.querySelector('.welcome-text h2').textContent = `Josephine DESOUZA`;
     document.querySelector('.welcome-text h6').textContent = `Statu: Chef de secteur`;
 
 
