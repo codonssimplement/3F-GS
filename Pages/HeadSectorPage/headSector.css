@@ -1,0 +1,433 @@
+ body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    
+}
+
+.container {
+    display: flex;
+    height: auto;
+}
+
+.vertical-navbar {
+    width: 22%;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(4, 20, 240, 0.281);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.navbar-top {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18%;
+    margin-bottom: 1%;
+    
+   
+    
+}
+
+.company-logo {
+    width: 270px;;
+    height: 280px;
+}
+
+.navbar-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    background-color: rgba(0, 72, 173, 0.815);
+    padding: 5px 0;
+    color: white;
+    margin-bottom: 7%;
+    font-size: 14px;
+
+    
+}
+
+.dashboard-icon {
+    margin-right: 10px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+    width: 25px;
+    height: 25px;
+}
+
+.navbar-bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.profile-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2.5px solid  rgba(0, 72, 173, 0.815);
+}
+.profile-icon-mini{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2.5px solid  rgba(0, 72, 173, 0.815);
+}
+.nav-links {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    flex-grow: 1;
+    margin-top: 5%;
+    
+}
+
+.nav-links li {
+    margin: 10px 20px 25px 40px;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+.nav-links a:hover{
+    color:rgba(4, 20, 240, 0.76);
+    font-weight: bold;
+}
+.nav-links .icon {
+    margin-right: 10px;
+}
+.disconnect-btn {
+    font-size: 14px;
+    border-radius: 7px;
+    border: #007bff;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color:   #0056b3;
+    color: #fff;
+    font-weight: bold;
+}
+
+.disconnect-btn:hover {
+    background-color: #007bff;
+}
+
+
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+.profile-image:hover
+{
+    border: 1.5px solid  rgba(0, 72, 173, 0.815);
+}
+.welcome-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.welcome-text{
+    display: flex;
+    align-items:center ;
+}
+.button-welcom-profil{
+    padding-left: 300px;
+}
+
+.dashboard-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.card-icon svg {
+    width: 40px;
+    height: 30px;
+    margin-bottom: 2px;
+}
+
+.claim-details {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.claim-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.claim-table th, .claim-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.claim-table th {
+    background-color: #0056b3;
+    color: white;
+}
+
+.claim-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.view-btn-confirmer:hover {
+    background-color: #1eb20a;
+    color: rgb(8, 8, 8);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12.5px;
+}
+.view-btn-modifier:hover {
+    background-color: #f9a006;
+    color: rgb(8, 8, 8);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12.5px;
+}
+.view-btn-supprimer:hover {
+    background-color: #ff0000d3;
+    color: rgb(8, 8, 8);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12.5px;
+}
+
+.btn-add-claim {
+    font-size: 12px;
+    border-radius: 7px;
+    border: #007bff;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    justify-content: center;
+    align-items: end;
+    background-color:   #0057b3ea;
+    
+}
+
+.btn-add-claim:hover {
+    background-color: #007bff;
+}
+h6{
+    padding: 0;
+    margin-top: -7px;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .vertical-navbar {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .welcome-text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-welcom-profil {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .dashboard-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 600px) {
+    input[type="text"], 
+    input[type="email"], 
+    input[type="tel"], 
+    input[type="date"], 
+    textarea {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+
+
+/* Modal */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Close Button */
+  .close {
+    color: #969595;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(230, 4, 4);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Form */
+  form {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form Elements */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],[type="tel"],[type="email"],[type="date"],[type="number"],
+  textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    font-size: 12px;
+    border-radius: 7px;
+    border: #007bff;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    justify-content: center;
+    align-items: end;
+    background-color:   #0057b3ea;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Checkboxes */
+  input[type="select"] {
+    margin-right: 5px;
+  }
+  .modal .modal-content h2{
+    color: rgb(4, 20, 240);
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  fieldset{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 25px;
+  }
+  legend{
+    color: #333;
+    font-weight: 700;
+  }
+
+svg{
+    width: 20px;
+    height:15px;
+    padding-right: 5px;
+    padding-top: 0px;
+    margin-bottom: 4px;
+}
+ .disconnect-icon{
+    width: 20px;
+    height:15px;
+    padding-right: 5px;
+    margin-bottom: -2px;
+} 
+p{
+    margin-top: -10px;
+}
