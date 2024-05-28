@@ -11,7 +11,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
     // Check if email exists in local storage
     const user = userData.find(user => user.email === email);
     if (!user) {
-        displayErrorMessage("Invalid email address or password.");
+        displayErrorMessage("Adresse email ou mot de passe invalide !");
         return;
     }
 
@@ -33,7 +33,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
 
     // Check if hashed password matches the stored hashed password
     if (hashedPassword !== user.password) {
-        displayErrorMessage("Invalid email address or password.");
+        displayErrorMessage("Adresse email ou mot de passe invalide !");
         return;
     }
 
@@ -51,7 +51,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
             break;
         default:
             // Redirect to default page if status is not recognized
-            window.location.href = "../HomePage/home.html";
+            window.location.href = "/home.html";
             break;
     }
 

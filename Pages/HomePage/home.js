@@ -2,11 +2,11 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("loginBtn").addEventListener("click", function() {
-        window.location.href = "../LoginPage/login.html"; 
+        window.location.href = "Pages/LoginPage/login.html"; 
     });
 
     document.getElementById("manageFoldersBtn").addEventListener("click", function() {
-        window.location.href = "../LoginPage/login.html"; 
+        window.location.href = "Pages/LoginPage/login.html"; 
     });
 });
 document.addEventListener("DOMContentLoaded", function() {
