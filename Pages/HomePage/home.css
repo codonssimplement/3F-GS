@@ -1,0 +1,163 @@
+
+/* COMMON STYLES */
+
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap);
+/* Global styles */
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: rgba(224, 232, 255, 0.336);
+    margin: 0;
+    padding: 0;
+}
+
+/* HOME-PAGE : HEADER */
+.main-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(4, 20, 240, 0.329);
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex: 0.75;
+    margin-right: 1%;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(3, 1, 12);
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: rgb(198, 1, 4);
+}
+
+.logo-compagny {
+    height: 250px; /* Change to auto to maintain aspect ratio */
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.btn-in-header {
+    font-size: 15px;
+    border-radius: 7px;
+    border: #007bff;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-in-header:hover {
+    background-color: #0056b3;
+}
+
+/* SECTION CONTENT HOME PAGE */
+.content-bc {
+    background: url('./images/img-home-page.png.png') no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    width: 100%;
+    height: calc(100vh - 85px); /* Adjust based on the header height */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.home-description {
+    text-align: start;
+    max-width: 500px;
+    padding: 0 20px;
+    padding-left: 50px;
+}
+
+.home-description h2 {
+    color: rgb(3, 1, 12);
+    font-size: 2.5rem;
+}
+
+.home-description h3 {
+    font-size: 2rem;
+}
+
+.home-description p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    width: 480px;
+}
+
+.btn-in-home-description {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.btn-in-home-description:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .main-header nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .logo-wrapper {
+        margin-bottom: 20px;
+    }
+    
+    .content-bc {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+
+    .home-description {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+}
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255); /* Semi-transparent white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's above other elements */
+}
+
+.loading-logo {
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+}
