@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.welcome-text h2').textContent = `Nom Prénom`;
+    document.querySelector('.welcome-text h2').textContent = `Juan BARTOSCKY`;
     document.querySelector('.welcome-text h6').textContent = `Statu: Chargé(e) de mission`;
 
 
