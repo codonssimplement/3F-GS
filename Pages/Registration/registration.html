@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3F-GS | Registration page</title>
+    <link rel="stylesheet" href="./registration.css">
+</head>
+<body>
+ 
+    <div class="container">
+        <div class="logo"><a href="../HomePage/home.html"><img src="./images/logo-compagny.png" alt="logo-compagny" ></a></div>
+        <h1>INSCRIPTION</h1>
+        <p>Merci de vous inscrire pour accéder à la plateforme !</p>
+        <form id="registrationForm">
+            
+            <input type="text" id="name" name="name" placeholder="Nom Prénom" required><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
+            <input type="password" id="password" name="password" placeholder="Mot de passe" required><br>
+            <select id="status" name="status"  required >
+                <option value="" disabled selected>Choisissez votre poste</option>
+                <option value="Head_of_Sector">Chef de secteur</option>
+                <option value="Manager_Mission">Chargé(e) de missions</option>
+                <option value="Responsible_of_Habitat">Responsable habitat</option>
+            </select><br>
+            <button type="submit">S'inscrire</button>
+           
+        </form>
+    </div>
+    <script src="./registration.js"></script>
+</body>
+</html>

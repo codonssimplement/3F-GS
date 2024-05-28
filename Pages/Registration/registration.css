@@ -1,0 +1,104 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap);
+/* Global styles */
+body {
+    font-family:  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto; 
+    padding: 18px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(4, 20, 240, 0.959);
+    text-align: center; 
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.logo img {
+    width: 200px; 
+    height: auto; 
+    margin-bottom: -20px;
+}
+
+h1 {
+    color: rgb(4, 20, 240);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+}
+
+#registrationForm {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #5c5b5b;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: rgba(4, 20, 240, 0.788);
+    border: 1px solid rgba(4, 20, 240, 0.788);
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+button:hover {
+   
+    background-color: #0056b3;
+    color: #000000;
+
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
