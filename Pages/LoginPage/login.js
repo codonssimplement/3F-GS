@@ -51,7 +51,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
             break;
         default:
             // Redirect to default page if status is not recognized
-            window.location.href = "/home.html";
+            window.location.href = "/index.html";
             break;
     }
 
